@@ -2,35 +2,32 @@
 <html>
     <head>
         <link href="./css/main.css" rel="stylesheet" />
+        <script src="./js/main.js" defer></script>
         <title>My First HTML Page</title>
+
     </head>
-    <header>
-        <div class="content">
-            <hgroup>
-            <!--<h1>LOGO</h1>-->
-            <!--<i>slogan</i>-->
-            <img src="./images/v2_3602.png" alt="Logo" width="1000" height=auto />
-            </hgroup>
+    <div class="hero-image">
+        <div class="hero-content">
+          <img src="./images/v2_3602.png" alt="Logo" width="1000" height=auto />
         </div>
-        <div class="overlay"></div>
-    </header>
-    <body>
-        <section class="site">
-            <nav>
-              <a href="">Page</a>
-              <a href="">Page</a>
-              <a href="">Page</a>
-              <a href="">Page</a>
-              <a href="">Page</a>
-            </nav>
+    </div> 
+    <div class="overlay"></div>
+
+    <header>
         
-            <script src="./js/main.js"></script>
+    </header>
+    <div id="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+    </div> 
+    <body onscroll="myFunction()">
+        <section class="site">
             <h1 style="background-color:DodgerBlue;">Hello World!</h1>
             <h2>Welcome to my website</h2>
             <p>This is my personal HTML website. Enjoy!</p>
             <img src="./images/v2_3227.png" alt="Hero Background">
         </section>
     </body>
-
-
+    
 </html>
