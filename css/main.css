@@ -1,36 +1,44 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);
-html, body {
-  padding: 0;
-  margin: 0;
-  height: 100%;
+@import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
+html, body, head {
+    padding: 0;
+    margin: 0;
+    height: 100%;
 }
 
 html {
-  font: 1em/1.5 "Lato", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizelegibility;
+    font: 1em/1.5 "Inter", sans-serif;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+}
+head {
+    font: 1em/1.5 "Inter", sans-serif;
+    font-weight: 200;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
 }
 
 body {
-  font-size: 1.3em;
+    font-size: 1.3em;
 }
 
 /* The hero image */
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/v2_3227.png");
-  
+
     /* Set a specific height */
-    height: 80%;
-  
+    height: 70%;
+
     /* Position and center the image to scale nicely on all screens */
-    background-position: center;
+    background-position: 50% 45%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-  
+
   /* Place text in the middle of the image */
 .hero-content {
     text-align: center;
@@ -45,7 +53,7 @@ body {
     overflow: hidden;
     background-color: #333;
 }
-  
+
   /* Navbar links */
 #navbar a {
     float: left;
@@ -58,23 +66,25 @@ body {
 #navbar a:hover {
     background-color: #ddd;
     color: black;
-  }
-  
-  #navbar a.active {
+}
+
+#navbar a.active {
     background-color: #04AA6D;
     color: white;
-  }
+}
 
 img{
-  margin-right:20px
+    margin-right:20px
 }
 .site {
-  padding: 16px;
-  text-align: center;
-  background-color: #efefef;
-  font-size: .8em;
-  color: #444;
-  position:relative
+    padding: 16px;
+    text-align: center;
+    background-color: #efefef;
+    font-size: .8em;
+    color: #444;
+    position:relative;
+    font: 1em/1.5 "Inter", sans-serif;
+  /*font-weight: 900*/
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
