@@ -27,7 +27,7 @@ body {
 /* The hero image */
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/v2_3227.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/donut_platter.png");
 
     /* Set a specific height */
     height: 70%;
@@ -91,14 +91,17 @@ img{
 }
 .column {
     float: left;
+
 }
 
 .left {
     width: 50%;
+    padding-left: 5em;
 }
 
 .right {
     width: 50%;
+    padding-right: 5em;
 }
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
