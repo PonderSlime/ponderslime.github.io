@@ -6,9 +6,15 @@
     float: left;
     padding: 15px;
 }
+
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
+}
+[class*="pic"] {
+    transform: translate(-100%,0);
+    width: 10%;
+    background-size: cover;
 }
 
 html, body, head {
@@ -31,7 +37,13 @@ head {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizelegibility;
 }
-
+.footer::after {
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
 body {
     font-size: 1.3em;
 }
@@ -119,6 +131,11 @@ img{
     /* For mobile phones: */
     [class*="col-"] {
         width: 50%;
+    };
+    [class*="pic"] {
+        transform: translate(-55%,0);
+        width: 600%;
+        height: 600%;
     }
 }
 .underline::after{
@@ -133,13 +150,7 @@ img{
 [class*="col-"] {
     float: left;
 }
-.footer {
-    background-color: #0099cc;
-    color: #ffffff;
-    text-align: center;
-    font-size: 12px;
-    padding: 15px;
-}
+
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: fixed;

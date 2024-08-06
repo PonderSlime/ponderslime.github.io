@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="bootstrap">
         <link href="./css/main.css" rel="stylesheet" />
         <script src="./js/main.js" defer></script>
         <title>My First HTML Page</title>
@@ -56,13 +57,16 @@
             </p>
             <div class="row", style="transform: translate(0%, 20%)">
                 <div class="col-left">
-                    <img src="./images/rain.png" style="border-radius: 6em; max-width: 100%; height: auto; background-size: cover;">
-
+                    <picture class="pic">
+                        <source srcset="./images/rain_banner.png" media="(max-width: 768px)">
+                        <source srcset="./images/rain.png">
+                        <img src="./images/rain.png" alt="Rain" style="border-radius: 6em;transform: translate(-55%, 0)"> 
+                    </picture>
                 </div>
                 <div class="col-right">
                     <div style="transform: translate(0, 45%);">
-                        <h1 style="font-weight: 600; font-size: 2em; text-align: left; padding-inline: 10%;"><span class='underline'>What I do</span></h1>
-                        <p style="text-align: left; padding-inline: 11%; width: width * 0.6;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <h1 style="font-weight: 600; font-size: 2em; text-align: left; padding-inline: 15%;"><span class='underline'>What I do</span></h1>
+                        <p style="text-align: left; padding-inline: 16%; width: width * 0.6;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
