@@ -103,6 +103,20 @@ img{
     width: 50%;
     padding-right: 5em;
 }
+.underline {
+
+    position:relative;
+
+}
+
+.underline:after{
+    content: "";
+    position:absolute;
+    bottom:-6px;/*position the underline using left and bottom property*/
+    left:0;
+    width:125%;/* adjust the width of underline as you like*/
+    border-bottom:3px solid #ccc;/* adjust the underline width and color as you like*/
+}
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: fixed;
