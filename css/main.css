@@ -1,4 +1,16 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
+* {
+    box-sizing: border-box;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
 html, body, head {
     padding: 0;
     margin: 0;
@@ -86,21 +98,16 @@ img{
     font: 1em/1.5 "Inter", sans-serif;
     /*font-weight: 900*/
 }
-.row {
-    display: flex;
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
-.column {
-    float: left;
-
-}
-
-.left {
-    width: 50%;
+.col-left {
     padding-left: 5em;
 }
 
-.right {
-    width: 50%;
+.col-right {
     padding-right: 5em;
 }
 .underline {
@@ -108,14 +115,30 @@ img{
     position:relative;
 
 }
-
-.underline:after{
+@media only screen and (min-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 50%;
+    }
+}
+.underline::after{
     content: "";
     position:absolute;
     bottom:-6px;/*position the underline using left and bottom property*/
     left:0;
     width:125%;/* adjust the width of underline as you like*/
     border-bottom:3px solid #ccc;/* adjust the underline width and color as you like*/
+}
+
+[class*="col-"] {
+    float: left;
+}
+.footer {
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
 }
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
