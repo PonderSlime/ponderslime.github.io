@@ -2,7 +2,6 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="bootstrap">
         <link href="./css/main.css" rel="stylesheet" />
         <script src="./js/main.js" defer></script>
         <title>PonderSlime's Portfolio</title>
@@ -26,7 +25,7 @@
     <body onscroll="myFunction()">
         
         <section class="site">
-            <div class="row" style="background:peru; padding: 35px; box-shadow: 0 2px 0 #000 inset, 0 -2px 0 #000 inset;">
+            <div class="row" style="background:peru; padding: 35px; transform: translate(0%, 10%);box-shadow: 0 2px 0 #000 inset, 0 -2px 0 #000 inset; font-weight: 600;">
                 <div class="three-columns">Game Dev</div>
                 <div class="three-columns">3D Artist</div>
                 <div class="three-columns" >Coder</div>
@@ -82,28 +81,7 @@
                     </div>
                 </div>
                 <div class="footer">
-                    <footer style="background-color: #444; color: wheat; font-size: 16px; box-sizing: border-box;">
-                        <section>
-                            <h3>About Us</h3>
-                            <a href="/about/history">Our History</a> 
-                            <a href="/about/team">Our Team</a> 
-                        </section>
-                        <section>
-                            <h3>Products</h3>
-                            <a href="/products/software">Software</a> 
-                            <a href="/products/hardware">Hardware</a> 
-                        </section>
-                        <section>
-                            <h3>Support</h3>
-                            <a href="/support/faq">FAQs</a> 
-                            <a href="/support/contact">Contact Us</a> 
-                        </section>
-                        <section>
-                            <h3>Legal</h3>
-                            <a href="/legal/terms">Terms of Service</a> 
-                            <a href="/legal/privacy">Privacy Policy</a> 
-                        </section>
-                    </footer>
+                    <!--#include virtual="./templates/common/footer.html" -->
                 </div>
             </section>
         </section>
