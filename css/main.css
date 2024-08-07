@@ -6,17 +6,35 @@
     float: left;
     padding: 15px;
 }
-
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
+@media only screen and (max-width: 767px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 99vw;
+    }
+    [class*="pic"] {
+        transform: translate(-110vw,0);
+        border-bottom-right-radius: 0em;
+        border-top-right-radius: 0em;
+        /* background-size: cover; */
+        /* position: relative; */
+    }
 }
-[class*="pic"] {
-    transform: translate(-100%,0);
-    width: 10%;
-    background-size: cover;
+@media only screen and (min-width: 768px) {
+    /* For Desktop: */
+    [class*="col-"] {
+        width: 49vw;
+    };
+    [class*="pic"] {
+        transform: translate(-55%,0);
+        /* position: relative; */
+        border-bottom-right-radius: 6em;
+        border-top-right-radius: 6em;
+        transform-origin: left center;
+        max-width: 100%;
+        height: auto;
+        width: auto\9;
+    }
 }
-
 html, body, head {
     padding: 0;
     margin: 0;
@@ -96,9 +114,11 @@ body {
     background-color: #04AA6D;
     color: white;
 }
-
 img{
-    margin-right:20px
+    margin-right:20px;
+    max-width: 400%;
+    width: auto\9;
+    height: auto;
 }
 .site {
     padding: 16px;
@@ -127,17 +147,7 @@ img{
     position:relative;
 
 }
-@media only screen and (min-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 50%;
-    };
-    [class*="pic"] {
-        transform: translate(-55%,0);
-        width: 600%;
-        height: 600%;
-    }
-}
+
 .underline::after{
     content: "";
     position:absolute;
@@ -146,11 +156,6 @@ img{
     width:125%;/* adjust the width of underline as you like*/
     border-bottom:3px solid #ccc;/* adjust the underline width and color as you like*/
 }
-
-[class*="col-"] {
-    float: left;
-}
-
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: fixed;
