@@ -91,7 +91,6 @@ body {
 }
 
 .site {
-    padding: 16px;
     text-align: center;
     background-color: #efefef;
     font-size: .8em;
@@ -99,6 +98,9 @@ body {
     position:relative;
     font: 1em/1.5 "Inter", sans-serif;
     /*font-weight: 900*/
+}
+.main-page {
+    padding: 16px;
 }
 .row::after {
     content: "";
@@ -114,6 +116,11 @@ body {
 }
 .underline {
     position:relative;
+}
+.three-columns {
+    float: left;
+    text-align: center;
+    width: 32vw;
 }
 
 .underline::after{
