@@ -7,6 +7,12 @@
     padding: 15px;
 }
 
+html, body, head {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
 html {
     font: 1em/1.5 "Inter", sans-serif;
     font-weight: 100;
@@ -38,9 +44,12 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/donut_platter.png");
 
     /* Set a specific height */
-    height: 70%;
+    height: 70vw;
 
     /* Position and center the image to scale nicely on all screens */
+    max-width: 100%;
+    min-width: 0%;
+    width: auto;
     background-position: 50% 45%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -101,7 +110,7 @@ body {
 }
 
 .col-right {
-    /* padding-right: 5em; */
+    padding-right: 5em;
 }
 .underline {
     position:relative;
@@ -127,38 +136,36 @@ body {
     padding-top: 0px;
 }
 
-/* For mobile phones: */
-[class*="col-"] {
-    width: 99vw;
+@media only screen and (max-width:768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 99vw;
+    }
+    [class*="pict"] {
+        transform: translate(-110vw,0);
+        border-bottom-right-radius: 0em;
+        border-top-right-radius: 0em;
+        max-width: 200%;
+        height: auto;
+        width: auto\9;
+        object-fit: contain;
+    }
 }
-[class*="pic"] {
-    transform: translate(-110vw,0);
-    border-bottom-right-radius: 0em;
-    border-top-right-radius: 0em;
-    max-width: 200%;
-    height: auto;
-    width: auto\9;
-    object-fit: contain;
-}
-@media (min-width:768px) {
+@media only screen and (min-width:768px) {
     /* For Desktop: */
     [class*="col-"] {
-        width: 49vw;
+        width: 49%;
     };
-    [class*="pic"] {
+    [class*="pict"] {
         transform: translate(-55%,0);
         /* position: relative; */
-        border-bottom-right-radius: 6em;
-        border-top-right-radius: 6em;
+        border-bottom-right-radius: 6vw;
+        border-top-right-radius: 6vw;
         transform-origin: left center;
-        max-width: 100%;
+        max-width: 145%;
         height: auto;
         width: auto\9;
     }
-    html, body, head {
-        padding: 0;
-        margin: 0;
-        height: 100%;
-    }
+
 }
 
