@@ -2,8 +2,7 @@ document.getElementById('navbar').innerHTML =
     "<a href='home'>Home</a><a href='#news'>News</a><a href='#contact'>Contact</a>"
 
 document.getElementById('myFooter').innerHTML =
-	"<div class='container'><div class='d-flex'><a href='https://ponderslime.github.io' class='cagov-logo'>"
-    + "<span class='sr-only'>PonderSlime.Github.io</span><span class='ca-gov-logo-svg'></span></a><ul class='footer-links'><li><a href='/conditions-of-use.html'>Conditions of use</a></li><li><a href='/privacy-policy.html'>Privacy policy</a></li><li><a href='/website-accessibility-certification.html'>Website accessibility certification</a></li><li><a href='/sitemap.html'>Sitemap</a></li></ul>"
-    + "<ul class='socialsharer-container'><li><a href='https://github.com/ponderslime'><span class='ca-gov-icon-github' aria-hidden='true'></span><span class='sr-only'>GitHub</span></a></li></ul></div>"
-    + "</div><!-- Copyright Statement --><div class='copyright'><div class='container text-right'>©<span id='thisyear'><script>document.getElementById('thisyear').appendChild(document.createTextNode(new Date().getFullYear()))</script>2024 </span>PonderSlime</div></div><button class='return-top'><span class='sr-only'>Back to top</span></button>"
-    + "</footer><!-- Extra Decorative Content --><div class='decoration-last'>&nbsp;</div>"
+	"<footer class='footer'><div class='container'><div class='row'><div class='footer-col'><h4>H1</h4><ul><li><a href='#'>about me</a></li><li><a href='#'>my services</a></li><li><a href='#'>privacy policy</a></li><li><a href='#'>affiliate program</a></li></ul></div>"
+    + "<div class='footer-col'><h4>H2</h4><ul><li><a href='#'>FAQ</a></li><li><a href='#'>shipping</a></li><li><a href='#'>returns</a></li><li><a href='#'>order status</a></li><li><a href='#'>payment options</a></li></ul></div>"
+    + "<div class='footer-col'><h4>H3</h4><ul><li><a href='#'>lego</a></li><li><a href='#'>bag</a></li><li><a href='#'>hack club</a></li><li><a href='#'>books</a></li></ul></div>"
+    + "<div class='footer-col'><h4>follow us</h4><div class='social-links'><a href='https://github.com/PonderSlime/'><i class='fab fa-github'></i></a><a href='#'><i class='fab fa-twitter'></i></a><a href='#'><i class='fab fa-instagram'></i></a><a href='#'><i class='fab fa-linkedin-in'></i></a></div></div></div></div></footer>"

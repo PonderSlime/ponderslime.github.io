@@ -27,13 +27,6 @@ head {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizelegibility;
 }
-#myFooter {
-    background-color: #0099cc;
-    color: #ffffff;
-    text-align: center;
-    font-size: 1vw;
-    padding: 150px;
-}
 body {
     font-size: 1.3em;
 }
